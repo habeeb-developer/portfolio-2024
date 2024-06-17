@@ -118,7 +118,7 @@ nav{
     height: 90px;
     line-height: 90px;
     /* background: var(--body-color); */
-	-webkit-backdrop-filter: blur(16px);
+	/* -webkit-backdrop-filter: blur(16px); */
     backdrop-filter: blur(16px);
     background-color: rgba(247, 247, 247, .5);
     padding-inline: 9vw;
@@ -671,7 +671,8 @@ footer{
 
 @media only screen and (max-width: 540px){
     .featured-name{
-        font-size: 40px;
+        font-size: 25px;
+        margin-top: 130px;
     }
     .project-box{
         width: 100%;
@@ -681,6 +682,43 @@ footer{
     }
     .input-field{
         width: 100%;
+    }
+
+    .featured-image{
+        order: 1;
+        justify-content: center;
+        min-height: 150px;
+        width: 100%;
+        margin-top: 85px;
+    }
+
+    .featured-text-btn {
+        display: grid;
+        gap: 20px;
+    }
+
+    .scroll-icon-box {
+        display: none;
+    }
+
+    .social_icons {
+        margin-top: 7em;
+        justify-content: center;
+        display: none;
+    }
+
+    nav {
+        width: 90%;
+    }
+
+    .nav-name {
+        font-size: 23px;
+        font-weight: 600;
+        color: var(--text-color-third);
+    }
+
+    .nav-menu{
+         background: var(--body-color);
     }
 }
 

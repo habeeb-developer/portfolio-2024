@@ -3,20 +3,394 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Habeeb Mohamed - Web Developer</title>
-    <meta content="Habeeb Mohamed is a Web Developer and designer from India, focused on user-centric experience, UI design to help software products stand out." name="description"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="app.css">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/.png" type="image/x-icon">
+
+      <!-- Remix Icon -->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"
+      />
+    
+    <title>Habeeb Developer</title>
 </head>
 <body>
-    <nav>
-        <a href="" class="animated-text">Works</a>
-        <a href="" class="animated-text">About</a>
-        <a href="" class="animated-text">Contact</a>
-        <a href="" class="animated-text">CV</a>
-        <span></span>
-    </nav>
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">&lt;Habeeb Mohamed&gt;</p>
+            <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+            <!-- <div class="nav-button">
+                <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+            </div> -->
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <!-- <div class="featured-text-card">
+                <span>Habeeb Mohamed</span>
+            </div> -->
+            <div class="featured-name">
+                <!-- <p>I'm a <span class="typedText"></span></p> -->
+                <p><span class="typedText"></span></p>
+            </div>
+            
+            <div class="hero-card">
+            <div class="featured-text-info">
+                <p>Hi👋 This is Habeeb Mohamed, a <span class="highlight">Web UI Developer</span> and designer specializing in crafting and enhancing websites, SaaS products, and graphic designs, based in Tamil Nadu, India.
+                </p>
+            </div>
+            <div class="featured-text-btn">
+                <a class="btn" style="text-decoration: none;" href="https://drive.google.com/file/d/1Xb7Ss257FvZXpzNuQ9fzJ6PE1HrPb3wj/view?usp=sharing" target="_blank">Download CV <i class="uil uil-file-alt"></i></a>
+                <a class="btn blue-btn" style="text-decoration: none;" href="#contact">Drop me an email <i class="uil uil-message"></i></a>
+            </div>
+        </div>
+
+            <div class="social_icons">
+                <div class="icon"><a href="https://www.linkedin.com/in/habeebdeveloper/" target="_blank"><i class="uil uil-linkedin-alt"></i></a></div>
+                <div class="icon"><a href="https://github.com/habeeb-developer" target="_blank"><i class="uil uil-github-alt"></i></a></div>
+                <div class="icon"><a href="https://www.instagram.com/withhabeeb_my/" target="_blank"><i class="uil uil-instagram"></i></a></div>
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="assets/images/avatar.png" alt="avatar">
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p>Scroll Down</p>
+            </a>
+          </div>
+
+       </section>
+       <!-- -------------- ABOUT BOX ---------------- -->
+       <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <!-- <h3>My introduction</h3> -->
+                    <p style="margin-bottom: 5px;">I'm Habeeb Mohamed,  I'm an experienced UI Developer and Designer, from India, with over 6+ years of expertise; specialised in front-end design systems. dedicated to creating web user interface and design solutions for growing websites and SaaS products.
+                    </p>
+                  
+
+                        <!-- Accordion 1  -->
+                        <div class="accordion">
+                            <button class="accordion-header">
+                              <span>
+                                The gist
+                              </span>
+                              <svg class="arrow" viewBox="0 0 320 512" width="16" title="angle-down">
+                                <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+                              </svg>
+                            </button>
+                            <div class="accordion-body">
+                                <ul style="font-size: 14px; color: #777; padding: 0px 18px;">
+                                    <li>Experience in research, prioritization, design, debugging, and prototyping.</li>
+                                    <li>Currently employed as a Web Developer at SoftInnovation Sdn Bhd, Malaysia.</li>
+                                    <li>Possesses over 6 years of experience designing and developing websites.</li>
+                                    <li>Specializes in front-end development and design systems.</li>
+                                    <li>Currently expanding skills with JavaScript libraries, focusing on React.</li>
+                                    <li>Brings experience from various industries: customer support executive, network engineer, designer, and current role as a web developer in established and growing companies.</li>
+                                </ul>   
+                            </div>
+                          </div>
+
+                           <!-- Accordion 2  -->
+                        <div class="accordion">
+                            <button class="accordion-header">
+                              <span>
+                                What I am looking for?
+                              </span>
+                              <svg class="arrow" viewBox="0 0 320 512" width="16" title="angle-down">
+                                <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+                              </svg>
+                            </button>
+                            <div class="accordion-body">
+                                <ul style="font-size: 14px; color: #777; padding: 0px 18px;">
+                                    <li>Interested in working with new product domains and breakthrough technologies.</li>
+                                </ul>   
+                            </div>
+                        </div>
+
+                          <!-- Accordion 3  -->
+                          <div class="accordion">
+                            <button class="accordion-header">
+                              <span>
+                                What else about me?
+                              </span>
+                              <svg class="arrow" viewBox="0 0 320 512" width="16" title="angle-down">
+                                <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+                              </svg>
+                            </button>
+                            <div class="accordion-body">
+                                <ul style="font-size: 14px; color: #777; padding: 0px 18px;">
+                                    <p>Currently, I reside in Cyberjaya, a town in the state of Selangor, Malaysia. I was born in India and relocated to Malaysia in 2022 for work. I believe that gaining international experience will enhance my profile and open up better opportunities for me.</p>
+                                    
+                                </ul>   
+                            </div>
+                        </div>
+                        <p style="margin: 5px 5px;"">So, what do you say? Ready to make some really good products?</p>
+                   
+                    
+                    <div class="about-btn" style="margin-top: 10px;">
+                        <button class="btn"><a href="#projects" style="text-decoration: none; color:#fff;">Check my works <i class="uil uil-arrow-circle-right"></i></a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Bootstrap</span>
+                        <span>JavaScript</span>
+                        <span>jQuery</span>
+                    </div>
+                </div>
+
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Tools & Softwares</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>VS Code</span>
+                        <span>Visual Studio</span>
+                        <span>Git</span>
+                        <span>Gitlab</span>
+                        <span>NPM</span>
+                        <span>CLI</span>
+                    </div>
+                    <div class="skills-list" style="margin-top: 15px;">
+                        <span>Figma</span>
+                        <span>Canva</span>
+                        <span>Photoshop</span>
+                        <span>Premiere Pro</span>
+                    </div>
+
+                    <div class="skills-list" style="margin-top: 15px;">
+                        <span>macOS</span>
+                        <span>Windows</span>
+                        <span>Linux</span>
+                        <span>Chrome OS</span>
+                    </div>
+
+                    <div class="skills-list" style="margin-top: 15px;">
+                        <span>CMS</span>
+                        <span>Google Workspace</span>
+                        <span>Microsoft Office</span>
+                    </div>
+                </div>
+
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>English</span>
+                        <span>Tamil</span>
+                     </div>
+                </div>
+            </div>
+          </div>
+       </section>
+
+       <!-- -------------- PROJECT BOX ---------------- -->
+
+       <section class="section" id="projects">
+          <div class="top-header">
+              <h1>Projects</h1>
+          </div>
+          <div class="project-container">
+            <div class="project-box">
+                <img src="assets/images/portfolio-cover.png" style="width: 100%;height: auto;object-fit: cover; z-index: 999; margin-bottom: 5px;" alt="Portfolio-Home_page">
+                <div class="featured-text-card">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JAVASCRIPT</span>
+                </div>
+                <h3>Personal Portfolio</h3>
+                <label>The personal website/portfolio of Habeeb Mohamed.</label>
+                <a href="http://habeeb.quest" target="_blank" class="btn-live-preview">
+                    Live Preview <i class="uil uil-arrow-circle-right"></i>
+                </a>
+                </div>
+
+            <div class="project-box">
+                <img src="assets/images/App-Design.png" style="width: 100%;height: auto;object-fit: cover; z-index: 999" alt="Portfolio-Home_page">
+                <div class="featured-text-card">
+                    <span>FIGMA</span>
+                </div>
+                <h3>Gold Savings App</h3>
+                <label>Gold Savings App Prototype: Easily save, buy, sell gold</label>
+                <a href="https://www.figma.com/proto/5w1WmuTeDEOS9eMuA4jLVS/CiMB-App-Design?type=design&node-id=343-7286&t=a4qPAFLnlVUUX0MD-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=343%3A7284" target="_blank" class="btn-live-preview">
+                    Live Preview <i class="uil uil-arrow-circle-right"></i>
+                </a>
+            </div>
+
+            <div class="project-box">
+                <img src="assets/images/jumppoint-logistics.png" style="width: 100%;height: auto;object-fit: cover; z-index: 999" alt="Portfolio-Home_page">
+                <div class="featured-text-card">
+                    <span>FIGMA</span>
+                </div>
+                <h3>Jumppoint Logistics</h3>
+                <label>Design for Jumpoint Shopify Plugin: Automate deliveries, real-time tracking, easy local/international shipping.</label>
+                <a href="https://www.figma.com/proto/JWst4Z2ZfjymWcJfMYJm82/Jumppoint-Plugin---Shopify-Admin-Portal?node-id=267-8462&scaling=scale-down-width&content-scaling=fixed&t=39ib9GGf9TfsXk2f-1" target="_blank" class="btn-live-preview">
+                    Live Preview <i class="uil uil-arrow-circle-right"></i>
+                </a>
+            </div>
+
+            <div class="project-box">
+                <img src="assets/images/fortune-insurance.png" style="width: 100%;height: auto;object-fit: cover; z-index: 999" alt="Portfolio-Home_page">
+                <div class="featured-text-card">
+                    <span>FIGMA</span>
+                </div>
+                <h3>Fortune Insurance Company</h3>
+                <label>Design Fortune Insurance Company: Simplified, speedy industrial claim process for damage or loss. Focus on what matters most.</label>
+                <a href="https://www.figma.com/proto/2rFPUUXpXw1EROpj6cQkaC/Freelance-Project---Fortune-Claim-Company?type=design&node-id=353-1017&t=d17Q8pUdf3sTh0pK-0&scaling=scale-down-width&page-id=0%3A1&content-scaling=fixed" target="_blank" class="btn-live-preview">
+                    Live Preview <i class="uil uil-arrow-circle-right"></i>
+                </a>
+            </div>
+
+            <div class="project-box">
+                <img src="assets/images/fortune-insurance.png" style="width: 100%;height: auto;object-fit: cover; z-index: 999" alt="Portfolio-Home_page">
+                <div class="featured-text-card">
+                    <span>FIGMA</span>
+                </div>
+                <h3>Fortune Insurance Company</h3>
+                <label>Design Fortune Insurance Company: Simplified, speedy industrial claim process for damage or loss. Focus on what matters most.</label>
+                <a href="https://www.figma.com/proto/2rFPUUXpXw1EROpj6cQkaC/Freelance-Project---Fortune-Claim-Company?type=design&node-id=353-1017&t=d17Q8pUdf3sTh0pK-0&scaling=scale-down-width&page-id=0%3A1&content-scaling=fixed" target="_blank" class="btn-live-preview">
+                    Live Preview <i class="uil uil-arrow-circle-right"></i>
+                </a>
+            </div>
+
+            
+          </div>
+
+          
+       </section>
+
+       <!-- -------------- CONTACT BOX ---------------- -->
+
+       <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Got a cool project in mind?
+                <br>Or fancy a chat about a job?<br>
+                Just shoot me an email 🚀</span>
+          </div>
+          <div class="row">
+             <div class="col">
+                <div class="contact-info">
+                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i> Email: habeebdeveloper@gmail.com</p>
+                    <p><i class="uil uil-phone"></i> Mob: +60 111 680 9181</p>
+                </div>
+             </div>
+             <div class="col">
+                <div class="form-control">
+                    <div class="form-inputs">
+                        <input type="text" class="input-field" placeholder="Name">
+                        <input type="text" class="input-field" placeholder="Email">
+                    </div>
+                    <div class="text-area">
+                        <textarea placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-button">
+                        <button class="btn">Send <i class="uil uil-message"></i></button>
+                    </div>
+                </div>
+             </div>
+          </div>
+       </section>
+
+    </main>
+
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p class="nav-name">&lt;Habeeb Mohamed&gt;</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <div class="icon"><a href="https://www.linkedin.com/in/habeebdeveloper/" target="_blank"><i class="uil uil-linkedin-alt"></i></a></div>
+            <div class="icon"><a href="https://github.com/habeeb-developer" target="_blank"><i class="uil uil-github-alt"></i></a></div>
+            <div class="icon"><a href="https://www.instagram.com/withhabeeb_my/" target="_blank"><i class="uil uil-instagram"></i></a></div>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Habeeb Mohamed</a> - All rights reserved</p>
+        </div>
+    </footer>
+
+    </div>
+
+
+
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

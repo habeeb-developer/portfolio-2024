@@ -1,21 +1,16 @@
 /* ----- POPPINS FONT Link ----- */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 /* ----- VARIABLES ----- */
 :root{
     --body-color: rgb(250, 250, 250);
     --color-white: rgb(255, 255, 255);
 
     --text-color-second: #333;
-    /* --text-color-third: rgb(30, 159, 171); */
     --text-color-third: #1c4eff;
 
-    /* --first-color: rgb(110, 87, 224); */
     --first-color: #333;
-    /* --first-color-hover: rgb(40, 91, 212); */
     --first-color-hover: #1c4eff;
 
-    /* --second-color: rgb(0, 201, 255); */
     --second-color: #1c4eff;
     --third-color: rgb(192, 166, 49);
     --first-shadow-color: rgba(0, 0, 0, 0.1);
@@ -27,7 +22,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 /* ----- SMOOTH SCROLL ----- */
@@ -53,6 +48,78 @@ html{
 
 
 /* ---##-- REUSABLE CSS --##--- */
+
+.lowercase{
+    text-transform: lowercase;
+}
+
+.pr-2{
+    padding-right: 2px; 
+}
+
+.fb-700 {
+    font-weight: 700;
+}
+
+.d-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fs16-l24{
+    font-size: 16px;
+    /* font-weight: bold; */
+    line-height: 24px;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.fs30-l24{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.blueText{
+    color:#1c4eff;
+}
+
+
+/* ---##-- OTHER CSS --##--- */
+
+.hi{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.hi-wave{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+
+
 
 /* ----- GLOBAL BUTTON DESIGN ----- */
 .btn{
@@ -110,27 +177,32 @@ body{
 }
 
 /* ----- NAVIGATION BAR ----- */
-nav{
+nav {
     position: fixed;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    height: 90px;
+    align-items: center;
+    width: 60%;
+    height: 80px;
     line-height: 90px;
-    /* background: var(--body-color); */
-	/* -webkit-backdrop-filter: blur(16px); */
     backdrop-filter: blur(16px);
-    background-color: rgba(247, 247, 247, .5);
-    padding-inline: 9vw;
-    transition: .3s;
+    background-color: rgba(247, 247, 247, 0.5);
+    border-radius: 1rem;
+    justify-content: space-around;
+    padding-inline: 0vw;
+    transition: 0.3s;
     z-index: 100;
 }
+
 .nav-logo{
    position: relative;
 }
 .nav-name{
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 700;
     color: var(--text-color-third);
 }
 .nav-logo span{
@@ -150,9 +222,11 @@ nav{
 .nav-link{
     text-decoration: none;
     color: var(--text-color-second);
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 600;
     padding-inline: 15px;
     margin-inline: 20px;
+    line-height: 20px;
 }
 .nav-menu-btn{
     display: none;
@@ -171,7 +245,7 @@ nav{
     content: '';
     position: absolute;
     left: 50%;
-    bottom: -15px;
+    bottom: -10px;
     transform: translate(-50%, -50%);
     width: 5px;
     height: 5px;
@@ -190,7 +264,7 @@ nav{
     position: relative;
     display: flex;
     height: 100vh;
-    min-height: 700px;
+    min-height: 800px;
 }
 
 /* ----- FEATURED TEXT BOX ----- */
@@ -217,8 +291,14 @@ nav{
     font-size: 40px;
     font-weight: 600;
     color: var(--text-color-second);
-    margin-block: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 4%;
+    position: absolute;
+    padding-inline: 30vw;
 }
+
 .typedText{
     /* text-transform: capitalize; */
     color: var(--first-color);
@@ -231,7 +311,7 @@ nav{
 }
 .featured-text-info{
     font-size: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     color: var(--text-color-second);
 }
 .featured-text-btn{
@@ -248,8 +328,8 @@ nav{
 }
 .social_icons{
     display: flex;
-    margin-top: 5em;
-    gap: 30px;
+    margin-top: 2em;
+    gap: 20px;
 }
 .icon{
     display: flex;
@@ -271,19 +351,20 @@ nav{
     justify-content: right;
     align-content: center;
     min-height: 80vh;
-    width: 50%;
+    width: 35%;
 }
 .image{
-    margin: auto 0;
-    width: 380px;
-    height: 380px;
+    /* margin: auto 0; */
+    margin: 230px 0;
+    width: 260px;
+    height: 260px;
     border-radius: 55% 45% 55% 45%;
     overflow: hidden;
     animation: imgFloat 7s ease-in-out infinite;
 }
 .image img{
-    width: 380px;
-    height: 380px;
+    width: 260px;
+    height: 260px;
     object-fit: cover;
 }
 @keyframes imgFloat {
@@ -315,7 +396,7 @@ nav{
 
 /* ----- MAIN BOX ----- */
 .section{
-    padding-block: 5em;
+    padding-block: 6em;
 }
 .row{
     display: flex;
@@ -568,7 +649,8 @@ footer{
 }
 .footer-social-icons{
     display: flex;
-    gap: 30px;   
+    margin-top: 2em;
+    gap: 20px;
 }
 .bottom-footer{
     font-size: 14px;

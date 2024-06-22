@@ -9,33 +9,30 @@ function myMenuFunction(){
   }
 }
 
+
+
 /* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
 window.onscroll = function() {headerShadow()};
-
 function headerShadow() {
   const navHeader =document.getElementById("header");
-
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop >  50) {
-
-    navHeader.style.boxShadow = "0 1px 6px rgba(0, 0, 0, 0.1)";
+    navHeader.style.boxShadow = "0 2px 5px rgba(0, 0, 0, .2)";
     navHeader.style.height = "70px";
     navHeader.style.lineHeight = "70px";
-
   } else {
-
     navHeader.style.boxShadow = "none";
     navHeader.style.height = "90px";
     navHeader.style.lineHeight = "90px";
-
   }
 }
+
 
 
 /* ----- TYPING EFFECT ----- */
 var typingEffect = new Typed(".typedText",{
   // strings : ["Web Developer","Web Designer"],
   // strings : ["Your search for better Web UI ends here"],
-  strings : ['Your search for better <span class="highlight">WEB UI</span> ends here'],
+  strings : ['Your search for better <span class="highlight">WEB UI</span> ends here!'],
   loop : true,
   typeSpeed : 100, 
   backSpeed : 80,
@@ -58,7 +55,7 @@ sr.reveal('.featured-text-info',{delay: 200})
 sr.reveal('.hero-card',{delay: 200})
 sr.reveal('.featured-text-btn',{delay: 200})
 sr.reveal('.social_icons',{delay: 200})
-sr.reveal('.featured-image',{delay: 300})
+sr.reveal('.featured-image',{delay: 200})
 
 
 /* -- PROJECT BOX -- */

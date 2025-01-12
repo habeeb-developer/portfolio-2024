@@ -256,7 +256,7 @@ nav {
 
 /* ----- WRAPPER DESIGN ----- */
 .wrapper{
-    padding-inline: 10vw;
+    padding-inline: 5vw;
 }
 
 /* ----- FEATURED BOX ----- */
@@ -706,11 +706,16 @@ footer{
     }
     .featured-text{
         width: 100%;
-        order: 2;
+        /* order: 2; */
         justify-content: center;
         align-content: flex-start;
-        min-height: 60vh;
+        min-height: 70vh;
     }
+    
+    .featured-name{
+        top: 10px;
+     }
+
     .social_icons{
         margin-top: 2em;
     }
@@ -719,7 +724,7 @@ footer{
         justify-content: center;
         min-height: 150px;
         width: 100%;
-        margin-top: 65px;
+        margin-top: -180px;
     }
     .image, .image img{
         width: 150px;
@@ -767,11 +772,16 @@ footer{
     }
 
     .featured-image{
-        order: 1;
-        justify-content: center;
+        /* order: 1; */
+        /* justify-content: center; */
         min-height: 150px;
         width: 100%;
-        margin-top: 85px;
+        /* margin-top: 85px; */
+        /* margin-top: -85px; */
+    }
+
+    .hero-card{
+        margin-top: 200px;
     }
 
     .featured-text-btn {
@@ -802,6 +812,8 @@ footer{
     .nav-menu{
          background: var(--body-color);
     }
+
+
 }
 
 .hero-card {

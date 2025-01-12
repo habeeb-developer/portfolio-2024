@@ -772,20 +772,13 @@ footer{
     }
 
     .featured-image{
+        display: none;
         /* order: 1; */
         /* justify-content: center; */
         min-height: 150px;
         width: 100%;
         /* margin-top: 85px; */
         /* margin-top: -85px; */
-    }
-
-    .hero-card{
-        margin-top: 250px;
-    }
-
-    .featured-text {
-        margin-top: 80vh;
     }
 
     .featured-text-btn {
@@ -817,6 +810,9 @@ footer{
          background: var(--body-color);
     }
 
+.featured-image{
+    display: none;
+}
 
 }
 
